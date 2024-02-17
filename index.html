@@ -14,9 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- customes color with Tailwind  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-green': '#1DD100',
+                    }
+                }
+            }
+        }
+    </script>
+
     <!-- Customus Style  -->
     <style>
-        .font-raleway{
+        .font-raleway {
             font-family: "Raleway", sans-serif;
         }
     </style>
@@ -61,20 +75,67 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn text-[#1DD100] text-xl font-bold">Bus <img src="images/bus-icon.png" alt=""></a>
+                    <a class="btn text-bg-green text-xl font-bold">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
         </nav>
-    </header>
+        <!-- banener section  -->
+        <section>
+            <div class="flex flex-col justify-center space-y-10  bg-no-repeat bg-center min-h-screen rounded-md "
+                style="background-image: url(images/banner.png); ">
 
-    <main>
+                <div class="text-center">
+                    <h3 class=" mb-8 text-5xl font-bold text-white text-center">End-to-End Travel with <br><br>  <span
+                        class="text-bg-green">P
+                        Paribahan</span></h3>
+                <p class="mb-8 text-white">Yes, you can run unit tests and view the results directly within the app. The
+                    integrated <br>testing features allow for a streamlined .</p>
+                </div>
+                <div class="text-center"><button class="btn bg-bg-green">Buy Tickets</button></div>
+            </div>
+        </section>
+    </header>
+    <main class="lg:mx-32 ">
+        <!-- Cuppon Section  -->
+        <section class=" lg:mt-24  flex flex-col space-y-14 ">
+            <h2 class="text-[#030712] font-bold text-4xl text-center">Best offers for you</h2>
+            <div class="flex flex-col lg:flex-row lg:justify-around">
+                <div class=" flex items-center rounded-3xl lg:gap-24 lg:px-8 bg-[#FFBF0F] ">
+                    <div class="lg:p-6">
+                        <p><span class="text-[40px] font-black text-[#030712CC]">15% OFF</span></p>
+                        <p>on your next purchase</p>
+                        <p> use by January 2024</p>
+                    </div>
+                    <div class="lg:p-6">
+                        <p> <span class="text-3xl text-[#030712] font-bold">NEW15</span> <br>
+                            Coupon Code</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex items-center lg:gap-24 rounded-3xl lg:lg:px-8 bg-[#F78C9C] ">
+                    <div class="lg:p-6">
+                        <p> <span class="text-[40px] font-black text-[#030712CC]">20% OFF</span> <br>
+                            on your next purchase <br>
+                            use by January 2024</p>
+                    </div>
+                    <div class="lg:p-6">
+                        <p><span class="text-3xl text-[#030712] font-bold">Couple 20</span> <br>
+                            Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class=" btn text-bg-green font-bold border-2 border-green-600 rounded-lg">See All Offers</p>
+            </div>
+        </section>
+
 
     </main>
 
     <footer>
 
     </footer>
-    <script src="scripts/scripts.js"></script>
+    <script src=" scripts/scripts.js"></script>
     <script src="scripts/utility.js"></script>
 </body>
 
