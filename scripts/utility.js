@@ -14,7 +14,7 @@ function setTextById(elmentsId, value) {
 }
 function makeTable(text) {
     const td1 = document.createElement('td');
-    td1.innerText = text ;
+    td1.innerText = text;
     td1.classList.add('lg:px-12', 'px-3', 'py-2');
 
     const td2 = document.createElement('td');
@@ -33,3 +33,4 @@ function makeTable(text) {
     const tableelement = document.getElementById('table');
     tableelement.appendChild(tr);
 }
+
