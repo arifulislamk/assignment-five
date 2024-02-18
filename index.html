@@ -395,14 +395,14 @@
                             <p>Total Price</p>
                             <p>BDT <span id="total-price">0</span></p>
                         </div>
-                        <div class="text-center flex justify-center">
+                        <div  class=" flex justify-center">
                             <div class="bg-white px-3 w-3/4">
                                 <input id="cupon-input" type="text" placeholder="Have any copupon?">
-                                <p id="text" class="hidden"></p>
                                 <button disabled onclick="apply()" id="apply-btn"
                                     class="btn p-3 rounded-lg">Apply</button>
                             </div>
                         </div>
+                        <div id="cuppon" class="flex justify-end lg:mr-14"></div>
                         <div class="flex justify-around font-medium text-[16px]">
                             <p>Grand Total</p>
                             <p>BDT <span id="grand-total">0</span></p>
@@ -414,13 +414,14 @@
                         <input id="nameid" class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id=""
                             placeholder="Enter your name">
                         <h2  class="font-semibold text-[#030712]">Phone Number*</h2>
-                        <input id="numberid" class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id=""
+                        <input id="numberid" class="p-6 w-full rounded-lg border-2 border-gray-200" type="number" name="" id=""
                             placeholder="Enter your phone number">
                         <h2 class="font-semibold text-[#030712]">Email ID</h2>
                         <input class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id=""
                             placeholder="Enter your email id">
-                        <button onclick="succeesful()" id="next-btn"
-                            class="bg-bg-green h-16 w-full text-white rounded-xl font-extrabold text-xl">Next</button>
+                        <button disabled id="next-btn"
+                            class="bg-bg-green btn h-16 w-full text-white rounded-xl font-extrabold text-xl">Next</button>
+                            <div class="flex justify-between"><p>Terms and Conditions</p><p>Cancellation Policy</p></div>
                     </div>
                 </div>
             </section>
