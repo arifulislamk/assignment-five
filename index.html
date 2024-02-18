@@ -33,14 +33,13 @@
         .font-raleway {
             font-family: "Raleway", sans-serif;
         }
-    
     </style>
     <title>RAFIA ENTERPRISE</title>
 </head>
 
 <body>
     <!-- header section  -->
-    <header class="lg:mx-32 font-raleway">
+    <header id="header" class="lg:mx-32 font-raleway">
 
         <nav>
             <div class="navbar bg-base-100">
@@ -88,20 +87,22 @@
 
                 <div class="text-center">
                     <h3 class=" mb-8 text-5xl font-bold text-white text-center">End-to-End Travel with <br><br> <span
-                            class="text-bg-green">P
+                            class="text-bg-green">Khan
                             Paribahan</span></h3>
                     <p class="mb-8 text-white">Yes, you can run unit tests and view the results directly within the app.
                         The
                         integrated <br>testing features allow for a streamlined .</p>
                 </div>
-                <div id="moveButton" class="text-center"><button onClick="document.getElementById('ticek-interface').scrollIntoView();" class="btn bg-bg-green">Buy Tickets</button></div>
+                <div id="moveButton" class="text-center"><button
+                        onClick="document.getElementById('ticek-interface').scrollIntoView();"
+                        class="btn bg-bg-green">Buy Tickets</button></div>
             </div>
         </section>
 
     </header>
-    <main class=" ">
+    <main class="">
         <!-- Cuppon Section  -->
-        <section class=" lg:mx-32 lg:mt-24  flex flex-col space-y-14 ">
+        <section id="Cuppon" class="lg:mx-32 lg:mt-24  flex flex-col space-y-14 ">
             <h2 class="text-[#030712] font-bold text-4xl text-center">Best offers for you</h2>
             <div class="flex flex-col lg:flex-row lg:justify-around">
                 <div class=" flex items-center rounded-3xl lg:gap-24 lg:px-8 bg-[#FFBF0F] ">
@@ -135,7 +136,7 @@
 
 
         <!-- full puarchase section  -->
-        <section class="mt-10 lg:mt-24 lg:px-24 lg:py-6 rounded-3xl bg-[#F7F8F8]">
+        <section id="purchase" class="mt-10 lg:mt-24 lg:px-24 lg:py-6 rounded-3xl bg-[#F7F8F8]">
 
             <!-- bus information  -->
             <section class=" space-y-14 ">
@@ -202,7 +203,7 @@
             </section>
 
             <!-- tiket interface  -->
-            <section id="ticek-interface" class= " bg-white lg:flex p-8 lg:gap-8">
+            <section id="ticek-interface" class=" bg-white lg:flex p-8 lg:gap-8">
                 <div class="space-y-5 flex-1">
                     <div>
                         <h2 class="text-[#030712] font-semibold text-2xl">Select Your Seat</h2>
@@ -223,91 +224,155 @@
                         <div>
                             <P id="A" class="px-11 py-4  font-medium text-[16px]">A</P>
                         </div>
-                        <div><button id="A1" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A1</button></div>
-                        <div><button id="A2" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A2</button></div>
-                        <div><button id="A3" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A3</button></div>
-                        <div><button id="A4" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A4</button></div>
-                        <div> <P id="B" class=" px-11 py-4  font-medium text-[16px]">B</P>
+                        <div><button id="A1"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A1</button>
                         </div>
-                        <div><button id="B1" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B1</button></div>
-                        <div><button id="B2" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B2</button></div>
-                        <div><button id="B3" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B3</button></div>
-                        <div><button id="B4" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B4</button></div>
-                        <div> <P id="C" class=" px-11 py-4 font-medium text-[16px]">C</P> 
+                        <div><button id="A2"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A2</button>
                         </div>
-                        <div><button id="C1" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C1</button></div>
-                        <div><button id="C2" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C2</button></div>
-                        <div><button id="C3" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C3</button></div>
-                        <div><button id="C4" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C4</button></div>
-                        <div> <P id="D" class="px-11 py-4  font-medium text-[16px]">D</P>
+                        <div><button id="A3"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A3</button>
                         </div>
-                        <div><button id="D1" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D1</button></div>
-                        <div><button id="D2" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D2</button></div>
-                        <div><button id="D3" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D3</button></div>
-                        <div><button id="D4" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D4</button></div>
-                        <div> <P id="E" class=" px-11 py-4  font-medium text-[16px]">E</P>
+                        <div><button id="A4"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">A4</button>
                         </div>
-                        <div><button id="E1" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E1</button></div>
-                        <div><button id="E2" class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E2</button></div>
-                        <div><button id="E3"  class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E3</button></div>
+                        <div>
+                            <P id="B" class=" px-11 py-4  font-medium text-[16px]">B</P>
+                        </div>
+                        <div><button id="B1"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B1</button>
+                        </div>
+                        <div><button id="B2"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B2</button>
+                        </div>
+                        <div><button id="B3"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B3</button>
+                        </div>
+                        <div><button id="B4"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">B4</button>
+                        </div>
+                        <div>
+                            <P id="C" class=" px-11 py-4 font-medium text-[16px]">C</P>
+                        </div>
+                        <div><button id="C1"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C1</button>
+                        </div>
+                        <div><button id="C2"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C2</button>
+                        </div>
+                        <div><button id="C3"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C3</button>
+                        </div>
+                        <div><button id="C4"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">C4</button>
+                        </div>
+                        <div>
+                            <P id="D" class="px-11 py-4  font-medium text-[16px]">D</P>
+                        </div>
+                        <div><button id="D1"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D1</button>
+                        </div>
+                        <div><button id="D2"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D2</button>
+                        </div>
+                        <div><button id="D3"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D3</button>
+                        </div>
+                        <div><button id="D4"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">D4</button>
+                        </div>
+                        <div>
+                            <P id="E" class=" px-11 py-4  font-medium text-[16px]">E</P>
+                        </div>
+                        <div><button id="E1"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E1</button>
+                        </div>
+                        <div><button id="E2"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E2</button>
+                        </div>
+                        <div><button id="E3"
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E3</button>
+                        </div>
                         <div><button id="E4"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E4</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">E4</button>
+                        </div>
                         <div>
                             <P id="F" class=" px-11 py-4  font-medium text-[16px]">F</P>
                         </div>
                         <div><button id="F1"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F1</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F1</button>
+                        </div>
                         <div><button id="F2"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F2</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F2</button>
+                        </div>
                         <div><button id="F3"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F3</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F3</button>
+                        </div>
                         <div><button id="F4"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F4</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">F4</button>
+                        </div>
                         <div>
                             <P id="G" class="px-11 py-4  font-medium text-[16px]">G</P>
                         </div>
                         <div><button id="G1"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G1</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G1</button>
+                        </div>
                         <div><button id="G2"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G2</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G2</button>
+                        </div>
                         <div><button id="G3"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G3</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G3</button>
+                        </div>
                         <div><button id="G4"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G4</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">G4</button>
+                        </div>
                         <div>
                             <P id="H" class=" px-11 py-4 font-medium text-[16px]">H</P>
                         </div>
                         <div><button id="H1"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H1</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H1</button>
+                        </div>
                         <div><button id="H2"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H2</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H2</button>
+                        </div>
                         <div><button id="H3"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H3</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H3</button>
+                        </div>
                         <div><button id="H4"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H4</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">H4</button>
+                        </div>
                         <div>
                             <P id="I" class=" px-11 py-4 font-medium text-[16px]">I</P>
                         </div>
                         <div><button id="I1"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I1</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I1</button>
+                        </div>
                         <div><button id="I2"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I2</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I2</button>
+                        </div>
                         <div><button id="I3"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I3</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I3</button>
+                        </div>
                         <div><button id="I4"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I4</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">I4</button>
+                        </div>
                         <div>
                             <P id="J" class=" px-11 py-4 font-medium text-[16px]">J</P>
                         </div>
                         <div><button id="J1"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J1</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J1</button>
+                        </div>
                         <div><button id="J2"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J2</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J2</button>
+                        </div>
                         <div><button id="J3"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J3</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J3</button>
+                        </div>
                         <div><button id="J4"
-                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J4</button></div>
+                                class="seats px-11 py-4 bg-[#F7F8F8] rounded-lg font-medium text-[16px]">J4</button>
+                        </div>
                     </div>
+
                     <!-- 40 seat end  -->
                 </div>
 
@@ -319,7 +384,8 @@
                         <div>
                             <table id="table" class="">
                                 <tr class=" lg: py-3  font-medium">
-                                    <th class="lg:px-12 px-3 py-3 ">Seat</td>
+                                    <th class="lg:px-12 px-3 py-3 ">Seat<span id="selected-seat"
+                                            class="px-2 rounded-lg">0</span></td>
                                     <th class="lg:px-12 px-3 py-3 ">Class</td>
                                     <th class="lg:px-12 px-3 py-3 ">Price</td>
                                 </tr>
@@ -333,7 +399,8 @@
                             <div class="bg-white px-3 w-3/4">
                                 <input id="cupon-input" type="text" placeholder="Have any copupon?">
                                 <p id="text" class="hidden"></p>
-                                <button disabled onclick="apply()" id="apply-btn" class="btn p-3 rounded-lg">Apply</button>
+                                <button disabled onclick="apply()" id="apply-btn"
+                                    class="btn p-3 rounded-lg">Apply</button>
                             </div>
                         </div>
                         <div class="flex justify-around font-medium text-[16px]">
@@ -344,19 +411,33 @@
 
                     <div class="space-y-5 ">
                         <h2 class="font-semibold text-[#030712]">Passenger Name*</h2>
-                        <input class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id="" placeholder="Enter your name">
-                        <h2 class="font-semibold text-[#030712]">Phone Number*</h2>
-                        <input class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id="" placeholder="Enter your phone number">
+                        <input id="nameid" class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id=""
+                            placeholder="Enter your name">
+                        <h2  class="font-semibold text-[#030712]">Phone Number*</h2>
+                        <input id="numberid" class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id=""
+                            placeholder="Enter your phone number">
                         <h2 class="font-semibold text-[#030712]">Email ID</h2>
-                        <input class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id="" placeholder="Enter your email id">
-                        <button class="bg-bg-green h-16 w-full text-white rounded-xl font-extrabold text-xl">Next</button>
+                        <input class="p-6 w-full rounded-lg border-2 border-gray-200" type="text" name="" id=""
+                            placeholder="Enter your email id">
+                        <button onclick="succeesful()" id="next-btn"
+                            class="bg-bg-green h-16 w-full text-white rounded-xl font-extrabold text-xl">Next</button>
                     </div>
                 </div>
             </section>
 
         </section>
 
-
+        <!-- hidden div -->
+        <section id="succeesful" class="lg:p-36 hidden">
+            <div class="text-center border-2 border-gray-400 space-y-6 lg:py-5">
+                <div class="flex justify-center"><img class="" src="images/success.png" alt=""></div>
+                <h2 class="text-2xl font-bold">SUCCESS</h2>
+                <p class="font-medium text-xl ">Thank you for Booking Our Bus Seats.
+                    We are working hard to find the best service and deals for you</p>
+                <p class="text-xl">Shortly you will find a confirmation in your email.</p>
+                <button onclick="continued()" class="bg-[#27AE60] text-white px-8 py-4 rounded-xl">Continue</button>
+            </div>
+        </section>
     </main>
 
     <footer>
