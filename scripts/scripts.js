@@ -12,7 +12,6 @@ for (const seat of alltickets) {
         if (count < 5) {
             console.log(e.target.innerText)
             const clickedSeat = e.target.innerText;
-            console.log(clickedSeat, 'clieked')
             setBackgroundColorById(clickedSeat);
 
             const seatValue = getValueById('seat-left');
@@ -87,6 +86,9 @@ function apply() {
         const input = document.getElementById('cupon-input');
         input.classList.add('hidden');
     }
+    else{
+        alert('Coupon Not Valid')
+    }
 }
 function succeesful() {
     const numinputText = document.getElementById('numberid').value;
@@ -101,7 +103,12 @@ function succeesful() {
         const header = document.getElementById('header');
         header.classList.add('hidden')
     }
+    else{
+        alert('Please fill at least name and number')
+    }
 }
+
+// again in main website from succeesful
 function continued() {
     const hiddendiv = document.getElementById('succeesful');
     hiddendiv.classList.add('hidden');
