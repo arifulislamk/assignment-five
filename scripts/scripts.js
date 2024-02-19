@@ -112,7 +112,9 @@ function succeesful() {
         const Cuppon = document.getElementById('Cuppon');
         Cuppon.classList.add('hidden');
         const header = document.getElementById('header');
-        header.classList.add('hidden')
+        header.classList.add('hidden');
+        const footer = document.getElementById('footer');
+        footer.classList.add('hidden');
     }
     else{
         alert('Please fill at least name and number')
