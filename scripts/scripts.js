@@ -10,6 +10,7 @@ for (const seat of alltickets) {
             applybtn.classList.add('bg-bg-green');
         }
         if (count < 5) {
+            
             console.log(e.target.innerText)
             const clickedSeat = e.target.innerText;
             setBackgroundColorById(clickedSeat);
@@ -36,6 +37,7 @@ for (const seat of alltickets) {
             const nextbtn = document.getElementById('next-btn');
             nextbtn.setAttribute("onclick", "succeesful()");
             nextbtn.removeAttribute("disabled");
+            seat.setAttribute("disabled",true);          
         }
     })
 }
@@ -48,16 +50,21 @@ function apply() {
         const updateGrand = grand - discount;
         setTextById('grand-total', updateGrand);
 
+        const p = document.createElement('p');
+        p.innerText = "Applied Cupon NEW15" ;
+        p.classList.add('bg-bg-green','rounded-lg','text-center','px-2','py-1','text-white','font-medium')
         const p1 = document.createElement('p');
-        p1.innerText = "Discount total";
+        p1.innerText = "Discount";
         p1.classList.add('lg:px-5', 'px-3', 'py-2','text-center');
         const p2 = document.createElement('p');
         p2.innerText = discount ;
         p2.classList.add('lg:px-5', 'px-3', 'py-2','text-center');
 
         const cuppon = document.getElementById('cuppon');
+        cuppon.appendChild(p);
         cuppon.appendChild(p1);
         cuppon.appendChild(p2);
+        
         // 
         const btn = document.getElementById('apply-btn');
         btn.classList.add('hidden');
@@ -70,14 +77,18 @@ function apply() {
         const updateGrand = grand - discount;
         setTextById('grand-total', updateGrand);
 
+        const p = document.createElement('p');
+        p.innerText = "Coupon Applied" ;
+        p.classList.add('bg-bg-green','rounded-lg','text-center','px-2','py-1','text-white','font-medium')
         const p1 = document.createElement('p');
-        p1.innerText = "Discount total";
+        p1.innerText = "Discount";
         p1.classList.add('lg:px-5', 'px-3', 'py-2','text-center');
         const p2 = document.createElement('p');
         p2.innerText = discount ;
         p2.classList.add('lg:px-5', 'px-3', 'py-2','text-center');
 
         const cuppon = document.getElementById('cuppon');
+        cuppon.appendChild(p);
         cuppon.appendChild(p1);
         cuppon.appendChild(p2);
 
@@ -117,7 +128,8 @@ function continued() {
     const Cuppon = document.getElementById('Cuppon');
     Cuppon.classList.remove('hidden');
     const header = document.getElementById('header');
-    header.classList.remove('hidden')
+    header.classList.remove('hidden');
+    window.location.reload();
 }
 
 
